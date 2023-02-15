@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Homemade.WebPages.Admin.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+     <title>Home Made Food Stuff Kart</title>
+        
+     <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+     <link rel="stylesheet" type="text/css" href="../../css/mycss.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="main">
+    <header>
+      <div id="logo"><h1>Home <a href="#">Kart</a></h1></div>
+       <ul class="lavaLampWithImage" id="lava_menu">
+          <li><a href="AdminOrdersList.aspx">Orders</a></li>
+            <li><a href="AdminUsersList.aspx">Users</a></li>
+            <li><a href="AdminEnterprenursList.aspx">Enterprenurs</a></li>
+            <li><a href="AdminSubCategoryList.aspx">Sub Categories</a></li>
+            <li><a href="AdminCategoryList.aspx">Categories</a></li>
+            <li><a href="../AdminLogin.aspx">Log Out</a></li>
+        </ul>
+    </header>
+    <div id="site_content">
+    <div id="allcontent">
+           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+    </div>
+
+    <footer>
+      <p>&copy; Food Kart | Design from Food Kart Team. </p>
+    </footer>
+  </div>
+    </form>
+</body>
+</html>

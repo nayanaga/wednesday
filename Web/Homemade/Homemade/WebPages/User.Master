@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="Homemade.WebPages.User" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+     <title>Homemade Food Stuff</title>
+     <meta name="description" content="website description" />
+     <meta name="keywords" content="website keywords, website keywords" />
+     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+     
+     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+     <link rel="stylesheet" type="text/css" href="../css/mycss.css" />
+
+     <!-- modernizr enables HTML5 elements and feature detects -->
+     <script type="text/javascript" src="../js/modernizr-1.5.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+   <div id="main">
+    <header>
+      <div id="logo"><h1>Food <a href="#">Kart</a></h1></div>
+      <nav>
+        <asp:ContentPlaceHolder ID="menucontent" runat="server">
+        </asp:ContentPlaceHolder>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="gallery">
+          <ul class="images">
+            <li class="show"><img width="450" height="450" src="../images/1.jpg" alt="photo_one" /></li>
+            <li><img width="450" height="450" src="../images/2.jpg" alt="photo_two" /></li>
+             <li><img width="450" height="450" src="../images/3.jpg" alt="photo_two" /></li>
+              <li><img width="450" height="450" src="../images/4.jpg" alt="photo_two" /></li>
+               <li><img width="450" height="450" src="../images/5.jpg" alt="photo_two" /></li>
+          </ul>
+        </div>
+      </div>
+      <div id="content">
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+      </div>
+    </div>
+
+   
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.lavalamp.min.js"></script>
+  <script type="text/javascript" src="../js/image_fade.js"></script>
+  <script type="text/javascript">
+      $(function () {
+          $("#lava_menu").lavaLamp({
+              fx: "backout",
+              speed: 700
+          });
+      });
+  </script>
+
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,10 @@
+I:\2021-2022 Projects\Projects\Android\MCA\Homemade Food Stuff\Web\Homemade\Homemade\bin\Homemade.dll
+I:\2021-2022 Projects\Projects\Android\MCA\Homemade Food Stuff\Web\Homemade\Homemade\bin\Homemade.pdb
+I:\2021-2022 Projects\Projects\Android\MCA\Homemade Food Stuff\Web\Homemade\Homemade\obj\Debug\Homemade.dll
+I:\2021-2022 Projects\Projects\Android\MCA\Homemade Food Stuff\Web\Homemade\Homemade\obj\Debug\Homemade.pdb
+I:\2021-2022 Projects\Projects\Android\MCA\Homemade Food Stuff\Web\Homemade\Homemade\obj\Debug\Homemade.csprojResolveAssemblyReference.cache
+G:\Homemade Food Stuff\Web\Homemade\Homemade\bin\Homemade.dll
+G:\Homemade Food Stuff\Web\Homemade\Homemade\bin\Homemade.pdb
+G:\Homemade Food Stuff\Web\Homemade\Homemade\obj\Debug\Homemade.csprojResolveAssemblyReference.cache
+G:\Homemade Food Stuff\Web\Homemade\Homemade\obj\Debug\Homemade.dll
+G:\Homemade Food Stuff\Web\Homemade\Homemade\obj\Debug\Homemade.pdb

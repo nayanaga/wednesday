@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E511AF07-1DFF-462F-9566-C5E652C5F12A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Homemade</RootNamespace>
+    <AssemblyName>Homemade</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\mycss.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\_notes\dwsync.xml" />
+    <Content Include="fonts\Jenna Sue Design Font License.txt" />
+    <Content Include="fonts\News Cycle SIL OFL Font License 1.1.txt" />
+    <Content Include="Global.asax" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\4.jpg" />
+    <Content Include="images\5.jpg" />
+    <Content Include="images\bullet.png" />
+    <Content Include="images\calendar.png" />
+    <Content Include="images\DTM-Blue-Wallpaper.jpg" />
+    <Content Include="images\welcome.gif" />
+    <Content Include="images\_notes\dwsync.xml" />
+    <Content Include="js\image_fade.js" />
+    <Content Include="js\jquery.easing.min.js" />
+    <Content Include="js\jquery.lavalamp.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\modernizr-1.5.min.js" />
+    <Content Include="js\_notes\dwsync.xml" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\_notes\dwsync.xml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebPages\AdminLogin.aspx" />
+    <Content Include="WebPages\Admin\AdminCategoryList.aspx" />
+    <Content Include="WebPages\Admin\AdminEnterprenursDetails.aspx" />
+    <Content Include="WebPages\Admin\AdminEnterprenursList.aspx" />
+    <Content Include="WebPages\Admin\AdminHome.aspx" />
+    <Content Include="WebPages\Admin\AdminOrdersDetails.aspx" />
+    <Content Include="WebPages\Admin\AdminOrdersList.aspx" />
+    <Content Include="WebPages\Admin\AdminSubCategoryList.aspx" />
+    <Content Include="WebPages\Admin\AdminUsersDetails.aspx" />
+    <Content Include="WebPages\Admin\AdminUsersList.aspx" />
+    <Content Include="WebPages\Index.aspx" />
+    <Content Include="WebPages\Profile.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\Database.cs" />
+    <Compile Include="Code\readyclass.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebPages\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminCategoryList.aspx.cs">
+      <DependentUpon>AdminCategoryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminCategoryList.aspx.designer.cs">
+      <DependentUpon>AdminCategoryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminEnterprenursDetails.aspx.cs">
+      <DependentUpon>AdminEnterprenursDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminEnterprenursDetails.aspx.designer.cs">
+      <DependentUpon>AdminEnterprenursDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminEnterprenursList.aspx.cs">
+      <DependentUpon>AdminEnterprenursList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminEnterprenursList.aspx.designer.cs">
+      <DependentUpon>AdminEnterprenursList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminOrdersDetails.aspx.cs">
+      <DependentUpon>AdminOrdersDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminOrdersDetails.aspx.designer.cs">
+      <DependentUpon>AdminOrdersDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminOrdersList.aspx.cs">
+      <DependentUpon>AdminOrdersList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminOrdersList.aspx.designer.cs">
+      <DependentUpon>AdminOrdersList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminSubCategoryList.aspx.cs">
+      <DependentUpon>AdminSubCategoryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminSubCategoryList.aspx.designer.cs">
+      <DependentUpon>AdminSubCategoryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminUsersDetails.aspx.cs">
+      <DependentUpon>AdminUsersDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminUsersDetails.aspx.designer.cs">
+      <DependentUpon>AdminUsersDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminUsersList.aspx.cs">
+      <DependentUpon>AdminUsersList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Admin\AdminUsersList.aspx.designer.cs">
+      <DependentUpon>AdminUsersList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fonts\DroidSans-webfont.eot" />
+    <None Include="fonts\DroidSans-webfont.woff" />
+    <None Include="fonts\JennaSue-webfont.eot" />
+    <None Include="fonts\JennaSue-webfont.ttf" />
+    <None Include="fonts\NewsCycle-Regular.eot" />
+    <None Include="fonts\NewsCycle-Regular.ttf" />
+    <Content Include="WebPages\User.Master" />
+    <Content Include="WebPages\Admin\Admin.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4840</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

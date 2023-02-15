@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HMFSU</string>
+
+    <string name="spinner_value">select the city </string>
+    <string-array name="district">
+        <item>Select the City</item>
+        <item>Davangere</item>
+        <item>Bangalore</item>
+        <item>Mysore</item>
+        <item>Shimoga</item>
+        <item>Tumkur</item>
+    </string-array>
+
+    <string name="navigation_draw_open">open navigation draw</string>
+    <string name="navigation_draw_close">close navigation draw</string>
+</resources>

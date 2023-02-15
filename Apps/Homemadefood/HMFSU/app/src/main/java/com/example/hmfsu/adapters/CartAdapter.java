@@ -1,0 +1,63 @@
+package com.example.hmfsu.adapters;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.hmfsu.R;
+import com.example.hmfsu.data_models.CartDataType;
+
+import java.util.ArrayList;
+
+public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
+
+    Context context;
+    ArrayList<CartDataType> ex;
+
+    public CartAdapter(Context context, ArrayList<CartDataType> ex) {
+        this.context = context;
+        this.ex = ex;
+    }
+
+    @NonNull
+    @Override
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+
+        View v = LayoutInflater.from(this.context).inflate(R.layout.layout_cart_iitem, parent, false);
+        return new ViewHolder(v);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        final CartDataType dt = ex.get(position);
+
+        holder.tvItem.setText(dt.getItem());
+        holder.tvPrice.setText(dt.getPrice());
+        holder.tvQty.setText(dt.getQty());
+        holder.tvAmount.setText(dt.getAmount());
+
+    }
+
+    @Override
+    public int getItemCount() {
+        // Toast.makeText(context.getApplicationContext(), String.valueOf(ex.size()), Toast.LENGTH_LONG).show();
+        return ex.size();
+    }
+    public class ViewHolder extends RecyclerView.ViewHolder {
+
+        TextView tvItem,tvPrice,tvQty,tvAmount;
+
+        public ViewHolder(View view) {
+            super(view);
+            tvItem = (TextView) view.findViewById(R.id.tvItem);
+            tvPrice=(TextView)view.findViewById(R.id.tvPrice);
+            tvQty=(TextView) view.findViewById(R.id.tvQty);
+            tvAmount=(TextView) view.findViewById(R.id.tvAmount);
+        }
+    }
+}
